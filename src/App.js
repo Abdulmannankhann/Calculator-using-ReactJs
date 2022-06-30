@@ -3,9 +3,7 @@ import "./Style.css";
 
 function App() {
   const [result, setResult] = React.useState("");
-
   const [neverSettle, setNeverSettle] = React.useState(false);
-
   let styles = {
     color: neverSettle ? "Red" : "#FFFFFF",
   };
@@ -33,7 +31,6 @@ function App() {
       setResult("Error");
     }
   }
-
   return (
     <div className="container">
       <form>
